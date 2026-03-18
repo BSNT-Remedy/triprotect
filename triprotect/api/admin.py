@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import FireReading, EarthquakeReading, ElectricalReading
 
-# Register your models here.
+admin.site.register(FireReading)
+admin.site.register(EarthquakeReading)
+admin.site.register(ElectricalReading)

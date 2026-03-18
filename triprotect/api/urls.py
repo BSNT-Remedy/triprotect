@@ -1,6 +1,8 @@
 from django.urls import path
-from .views import SensorDataView
+from .views import FireDataView, EarthquakeDataView, ElectricalDataView
 
 urlpatterns = [
-    path('sensor/', SensorDataView.as_view(), name='sensor-data'),
+    path('fire/', FireDataView.as_view(), name='fire-data'),
+    path('earthquake/', EarthquakeDataView.as_view(), name='earthquake-data'),
+    path('electrical/', ElectricalDataView.as_view(), name='electrical-data'),
 ]
